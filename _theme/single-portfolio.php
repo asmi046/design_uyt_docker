@@ -49,7 +49,8 @@ get_header(); ?>
 								$portfolioSlIndex = 0;
 									foreach ($portfolioSl as $item) {
 							?>
-								<div class="portfolio-slider__slide slider__slide">
+								<div class="portfolio-slider__slide slider__slide" >
+									<div class="galery_blur" style="background-image: url(<?php echo wp_get_attachment_image_src($item['portfolio_img'], 'large')[0]; ?>);" ></div>
 									<img src="<?php echo wp_get_attachment_image_src($item['portfolio_img'], 'large')[0]; ?>" alt=""> 						
 								</div>
 							<?
